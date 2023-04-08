@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://swordsofblood.com/sitemap.xml

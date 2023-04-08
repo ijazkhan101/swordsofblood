@@ -1,0 +1,98 @@
+.container {
+  width: 626px;
+  height: 289px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  [aria-label="card"] {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+
+  [aria-label="cards"] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 626px;
+    height: 289px;
+    object-fit: cover;
+    cursor: default;
+  }
+
+  @media screen and (max-width: 900px) {
+    & {
+      width: 476px;
+
+      img {
+        width: 476px;
+      }
+    }
+  }
+
+  // @media screen and (max-width: 900px) {
+  //   & {
+  //     width: 576px;
+  //     height: 239px;
+
+  //     img {
+  //       width: 576px;
+  //       height: 239px;
+  //     }
+  //   }
+  // }
+
+  [id="item-1"]:checked ~ [aria-label="cards"] [id="mode-6"],
+  [id="item-2"]:checked ~ [aria-label="cards"] [id="mode-1"],
+  [id="item-3"]:checked ~ [aria-label="cards"] [id="mode-2"],
+  [id="item-4"]:checked ~ [aria-label="cards"] [id="mode-3"],
+  [id="item-5"]:checked ~ [aria-label="cards"] [id="mode-4"],
+  [id="item-6"]:checked ~ [aria-label="cards"] [id="mode-5"] {
+    transform: translatex(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+  }
+
+  [id="item-1"]:checked ~ [aria-label="cards"] [id="mode-2"],
+  [id="item-2"]:checked ~ [aria-label="cards"] [id="mode-3"],
+  [id="item-3"]:checked ~ [aria-label="cards"] [id="mode-4"],
+  [id="item-4"]:checked ~ [aria-label="cards"] [id="mode-5"],
+  [id="item-5"]:checked ~ [aria-label="cards"] [id="mode-6"],
+  [id="item-6"]:checked ~ [aria-label="cards"] [id="mode-1"] {
+    transform: translatex(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+  }
+
+  [id="item-1"]:checked ~ [aria-label="cards"] [id="mode-1"],
+  [id="item-2"]:checked ~ [aria-label="cards"] [id="mode-2"],
+  [id="item-3"]:checked ~ [aria-label="cards"] [id="mode-3"],
+  [id="item-4"]:checked ~ [aria-label="cards"] [id="mode-4"],
+  [id="item-5"]:checked ~ [aria-label="cards"] [id="mode-5"],
+  [id="item-6"]:checked ~ [aria-label="cards"] [id="mode-6"] {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+
+    img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+  }
+}

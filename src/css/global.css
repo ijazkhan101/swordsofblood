@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'Animales Fantastic';
+  src: local('Animales Fantastic'), url("../assets/fonts/Animales\ Fantastic.otf") format('opentype');
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  /* background-color */
+  --primary-bg: #050505;
+  --secondary-bg: #242424;
+  /* text-color */
+  --primary-color: #c9ab84;
+  --secondary-color: #ffffff;
+  /* font-family */
+  font-display: swap;
+  --primary-font: "Space Grotesk", sans-serif;
+}
+
+body,
+html {
+  font-family: var(--primary-font);
+  font-display: swap;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
+}
+
+body {
+  padding-top: 70px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.seoTitle {
+  text-decoration: underline;
+}
+
+.image {
+  width: 100%;
+}
+
+.heading {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #c9ab84;
+}
+
+.title {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  color: #c9ab84;
+}
+
+.text {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+.subtext {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  color: #c9ab84;
+}
+
+.blank {
+  display: none;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper-pagination {
+  z-index: 10;
+  color: #c9ab84;
+  padding-right: 33%;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #c9ab84;
+}
+.swiper-horizontal {
+  touch-action: pan-y;
+  border-radius: 14px;
+}
+.textCont {
+  padding-top: 10px;
+}
+
+.textCont .heading {
+  padding: 20px 0;
+  text-align: left;
+}
+
+.textCont .text {
+  padding: 15px 0;
+  text-align: left;
+  line-height: 150%;
+}
+
+.textCont li.text {
+  margin-left: 15px;
+}
+
+.textCont li.text::marker {
+  margin-left: 3px;
+}
+
+.textCont .title {
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.textCont .padding {
+  padding-bottom: 0px;
+}

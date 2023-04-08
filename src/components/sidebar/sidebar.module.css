@@ -1,0 +1,242 @@
+.sidebar {
+  width: 265px;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  background-color: var(--secondary-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+
+.logoContainer {
+  background-color: var(--secondary-bg);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+}
+
+.logoContainer {
+  cursor: pointer;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #141414;
+}
+
+.navItems a,
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navItems a img,
+.navItem img {
+  width: 20px;
+  display: none;
+}
+
+.navBtn {
+  background-color: var(--primary-bg);
+}
+
+/* .navBtnActive {
+    background: none;
+} */
+
+.active {
+  background-color: var(--primary-color);
+  color: #000000 !important;
+}
+
+.navItem {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  padding: 20px 25px 15px 35px;
+  cursor: pointer;
+}
+
+.dropdownItems {
+  display: flex;
+  flex-direction: column;
+}
+.projectDropDownContainer .dropdownItems {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.projectDropDownContainer .projectDropDowns {
+  height: 96px;
+  transition: 0.3s ease;
+}
+.aboutDropDownContainer .dropdownItems {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.aboutDropDownContainer .aboutDropDowns {
+  height: 185px;
+  transition: 0.3s ease;
+}
+/* .dropdownItems {
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.presaleDropDownItmes {
+  height: auto;
+  transition: 0.5s ease;
+} */
+
+.rotateArrow {
+  transform: rotate(-180deg);
+  transition: 0.3s ease;
+}
+
+.dropdownItems .dropdownItem {
+  border-bottom: 1px dashed var(--primary-color);
+}
+
+.dropdownItems .dropdownItem:first-child {
+  padding-top: 18px;
+}
+
+.dropdownItems .dropdownItem:last-child {
+  padding-bottom: 18px;
+  border: none;
+}
+
+.dropdownHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.dropdownHeader .arrow {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dropdownItems .navItem {
+  padding: 15px 0;
+  padding-left: 50px;
+}
+
+.quicklinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 25px 15px 25px 15px;
+}
+
+.quichLinksHeader {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.quicklinksContainer .link {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.descriptionContainer {
+  padding: 0px 15px 25px 15px;
+}
+
+.descriptionContainer .description {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 125%;
+  color: #ffffff;
+  padding: 6px 0;
+}
+
+.socialMediaContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: 0.1px solid rgb(224, 224, 224, 0.6);
+}
+
+.allSocialMedia {
+  display: grid;
+  grid-template-columns: repeat(4, 21px);
+  gap: 15px 30px;
+}
+
+.actie {
+  background-color: var(--primary-color);
+  color: #000000;
+}
+
+@media only screen and (max-width: 991px) {
+  .sidebar {
+    transform: translateX(-265px);
+    transition: 0.3s ease-in-out;
+    top: 70px;
+    min-height: calc(100vh - 70px);
+  }
+
+  .showSidebar {
+    transform: translateX(0px);
+    transition: 0.3s ease-in-out;
+  }
+
+  .logoContainer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .sidebar .quichLinksHeader {
+    display: none;
+  }
+
+  .sidebar .quicklinksContainer {
+    display: none;
+  }
+
+  .sidebar .socialMediaContainer {
+    display: none;
+  }
+
+  .sidebar .descriptionContainer {
+    display: none;
+  }
+
+  .descriptionContainer {
+    padding: 0;
+    padding-top: 8px;
+  }
+}

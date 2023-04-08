@@ -1,0 +1,40 @@
+.index {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  column-gap: 10px;
+  padding-top: 28px;
+  margin-bottom: 68px;
+
+  p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #ffffff;
+    max-width: 180px;
+  }
+
+  [aria-label="item-container"] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  @media screen and (max-width: 950px) {
+    & {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    & {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

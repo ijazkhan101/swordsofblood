@@ -1,0 +1,163 @@
+.teamSection {
+  padding: 40px 0;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.bio {
+  margin: 0 auto 17px;
+  width: 264px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #858585;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 70px;
+}
+
+.teamMember {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamImage {
+  width: 264px;
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+}
+
+.goToTeam {
+  width: 264px;
+  height: 264px;
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  color: #c9ab84;
+}
+
+.goToTeam img {
+  margin-bottom: 13px;
+}
+
+.teamSection .infoAndSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.teamSection .text {
+  padding-top: 4px;
+}
+
+.teamSection .subtext {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.teamSection .linkedin {
+  background: #ac9679;
+  border-radius: 7px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin: 0 auto;
+}
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin: 0 auto;
+}
+.insta img {
+  width: 30px;
+}
+@media only screen and (max-width: 1440px) {
+  .teamMembers {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+  .teamMembers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .teamMembers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .teamImage,
+  .bio {
+    width: 230px;
+  }
+  .goToTeam {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .teamImage,
+  .bio {
+    width: 200px;
+  }
+  .goToTeam {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .teamMembers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .teamMembers {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+
+@media (max-width: 768px) {
+  .teamSection .infoAndSocial {
+    justify-content: flex-start;
+  }
+}

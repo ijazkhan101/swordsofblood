@@ -1,0 +1,125 @@
+.container{
+    color: #c9ab84;
+    text-align: center;
+    position: relative;
+    height: calc(100vh - 120px);
+}
+
+.container h1{
+    font-size: 350pt;
+}
+.container h2{
+    font-size: 28pt;
+    margin-top: -87px;
+    margin-bottom: 50px;
+}
+.container a {
+    color: #c9ab84;
+    display: block;
+    font-size: 22px;
+}
+
+
+.glitch {
+    animation: glitch 1s infinite;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 
+      -1px -1px 0 #00ffff,
+      1px -1px 0 #ff00ff,
+      -1px 1px 0 #ffff00,
+      1px 1px 0 #00ff00;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0, 0);
+      text-shadow: 
+        -1px -1px 0 #00ffff,
+        1px -1px 0 #ff00ff,
+        -1px 1px 0 #ffff00,
+        1px 1px 0 #00ff00;
+    }
+    25% {
+      transform: translate(-5px, 5px);
+      text-shadow: 
+        -1px -1px 0 #ffff00,
+        1px -1px 0 #00ffff,
+        -1px 1px 0 #ff00ff,
+        1px 1px 0 #00ff00;
+    }
+    50% {
+      transform: translate(5px, -5px);
+      text-shadow: 
+        -1px -1px 0 #ff00ff,
+        1px -1px 0 #ffff00,
+        -1px 1px 0 #00ffff,
+        1px 1px 0 #00ff00;
+    }
+    75% {
+      transform: translate(5px, 5px);
+      text-shadow: 
+        -1px -1px 0 #00ff00,
+        1px -1px 0 #ff00ff,
+        -1px 1px 0 #ffff00,
+        1px 1px 0 #00ffff;
+    }
+    100% {
+      transform: translate(-5px, -5px);
+      text-shadow: 
+        -1px -1px 0 #00ffff,
+        1px -1px 0 #ff00ff,
+        -1px 1px 0 #ffff00,
+        1px 1px 0 #00ff00;
+    }
+  }
+
+@media (max-width: 1536px){
+    .container h1{
+        font-size: 300pt;
+    }
+    .container h2{
+        font-size: 24pt;
+        margin-top: -75px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container h1{
+        font-size: 250pt;
+    }
+    .container h2{
+        font-size: 20pt;
+        margin-top: -65px;
+        margin-bottom: 30px;
+    }
+    .container a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .container h1{
+        font-size: 200pt;
+    }
+    .container h2{
+        font-size: 16pt;
+        margin-top: -55px;
+        margin-bottom: 20px;
+    }
+    .container a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 640px){
+    .container h1{
+        font-size: 100pt;
+    }
+    .container h2{
+        font-size: 13pt;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+}

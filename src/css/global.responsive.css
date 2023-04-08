@@ -1,0 +1,61 @@
+.mobileImage {
+    display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .swiper-pagination {
+        color: #c9ab84;
+        padding-right: 400px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .blank {
+        display: block;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .mobileImage {
+        display: block;
+    }
+
+    .dekstopImage {
+        display: none;
+    }
+
+    .whatYouGet .slider-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .whatYouGet .slider {
+        display: flex;
+        width: fit-content;
+        transition: transform 0.5s ease;
+        touch-action: pan-y;
+    }
+    
+    .whatYouGet .slides {
+        display: flex;
+    }
+    
+    .whatYouGet .slide {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .title {
+        font-size: 20px;
+    }
+}

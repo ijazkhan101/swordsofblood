@@ -1,0 +1,86 @@
+.index {
+  padding: 60px 0 64px;
+  background-image: url("../../images/game-mode/main-home-bckgd-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.index h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 28px;
+  text-transform: capitalize;
+
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #c9ab84;
+}
+
+.sub_title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin: 24px 0 27px;
+}
+
+.sub_title h3 {
+  margin: 0 !important;
+  font-family: "Animales Fantastic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 5px;
+
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #c9ab84;
+}
+
+.text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text a {
+  color: #c9ab84;
+}
+
+.container {
+  width: 626px;
+  margin: 0 auto;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swhiper {
+  border-radius: 0 !important;
+  margin: 0 auto;
+}
+
+.swhiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  max-height: 289px;
+}

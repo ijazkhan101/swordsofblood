@@ -1,0 +1,65 @@
+.ourfacilites {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 263px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.facilities {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 15px;
+}
+
+.facilities .title {
+    font-size: 14px;
+}
+
+.facilities .imageAndtext {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #050505 url("../../images/home/Bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    border: 1px solid #c9ab84;
+    padding-right: 8px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .facilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1199.5px) {
+    .facilities {
+        display: grid !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .ourfacilites {
+        padding: 40px 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .facilities {
+        display: flex;
+    }
+
+    .ourfacilites .halvdansQuestArt {
+        width: 263px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .facilities {
+        grid-template-columns: 1fr;
+    }
+}

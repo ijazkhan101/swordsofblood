@@ -1,0 +1,165 @@
+.modal {
+  padding: 0;
+  max-width: 460px;
+}
+
+.modal .modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 20px;
+}
+
+.modalTitle {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: left;
+  width: 100%;
+  color: #ffffff;
+}
+
+.modaltagline {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+  text-align: left;
+}
+
+.modal .inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.6px solid #c9ab84;
+  border-radius: 17px;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 25px;
+}
+
+.modal .input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+  padding: 4px 0px;
+}
+
+.modal .token {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.suggestionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.suggestion {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.83;
+}
+
+.margTop {
+  margin-top: 0;
+}
+
+.approveButton {
+  font-family: "Space Grotesk";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: center;
+  color: #050505;
+  background: var(--primary-color);
+  border-radius: 14px;
+  padding: 8px 30px;
+  width: 195px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.tokensToBuyContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.tokensToBuyContainer button {
+  color: #c9ab84;
+  border: 0.6px solid #c9ab84;
+  border-radius: 14px;
+  padding: 2px 14px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tokensToBuyContainer button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media (min-width: 900px) {
+  .modal {
+    transform: scale(1.4);
+  }
+}
+@media (max-width: 900px) {
+  .tokensToBuyContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

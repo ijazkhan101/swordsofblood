@@ -1,0 +1,15 @@
+/*.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}*/
+
+.rightside {
+    padding-left: calc(265px + 25px);
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    .rightside {
+        padding: 0 14px;
+    }
+}
